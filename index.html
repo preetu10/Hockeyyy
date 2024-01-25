@@ -21,24 +21,305 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            blacks:'#131318',
+            secondary:'#FF4240',
+            blackish:'#424247',
           }
         }
       }
     }
   </script>
 </head>
-<body class="font-manrope">
-    <header>
-        <nav>
-
-
+<body class="font-manrope mx-auto">
+    <header class="my-12 mx-auto">
+        <nav class="flex lg:flex-row justify-evenly items-center">
+          <h1 class="font-extrabold text-4xl text-blacks">Hockey<span class="text-secondary">'</span>s</h1>
+          <ul class="flex lg:flex-row">
+            <li class="mr-11 text-secondary"><a href=""></a>Home</li>
+            <li class="mr-11 text-blackish"><a href=""></a>About</li>
+            <li class="mr-11 text-blackish"><a href=""></a>Pages</li>
+            <li class="mr-11 text-blackish"><a href=""></a>Blog</li>
+            <li class="mr-11 text-blackish"><a href=""></a>Contact</li>
+          </ul>
+          <div>
+            <i class="fa-solid fa-magnifying-glass mr-6"></i>
+            <button class=" btn bg-secondary border-none inline-flex justify-center px-5  text-white text-center">Get Ticket</button>
+          </div>
         </nav>
+
+
+        <div class="mt-12 relative mx-auto flex flex-col justify-center  items-center">
+          <div class="carousel  w-3/4">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
+          <div class="lg:absolute lg:bottom-10 lg:right-60 bg-blacks rounded-lg mt-2  p-8 w-3/4  lg:mt-0  lg:h-30 lg:w-2/5">
+            <h3 class="text-white font-extrabold">Meet all the heroes from the field</h3>
+          <p class="text-white opacity-40 font-normal text-base">They are more valiant, struggling, hard working. Hockey is their passion and also ambition now.</p>
+          </div>
+        </div>
     </header>
-    <main>
-
+    <main class="mx-auto ">
+      <section class="text-center mb-12">
+        <h3 class="text-blacks font-extrabold text-4xl">Professional Hockeys Club</h3>
+        <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80">There are many more hockey clubs. All clubs are reputed and well populated by players. They provide many beneficial service.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-2 mx-auto justify-center items-center text-center">
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#FF4240] h-26 " style="--value:87;" role="progressbar"><span class="text-black font-bold">87%</span></div>
+            <h3 class="text-xl font-semibold mt-3">Prayer Facility</h3>
+            <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80 px-10">Main attractive facility is there is a big prayer room to pray.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#49D293] h-26" style="--value:95;" role="progressbar"><span class="text-black font-bold">95%</span></div>
+            <h3 class="text-xl font-semibold mt-3">Experienced Coach</h3>
+            <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80 px-10">There are all experienced coaches. They are minimum 7 years experienced.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#FFB546] h-26" style="--value:90;" role="progressbar"><span class="text-black font-bold">90%</span></div>
+            <h3 class="text-xl font-semibold mt-3">Senior Player</h3>
+            <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80 px-10">There are many senior players who are also coaches. They train their juniors.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#4C8DF1] h-26" style="--value:80;" role="progressbar"><span class="text-black font-bold">80%</span></div>
+            <h3 class="text-xl font-semibold mt-3">Training Ground</h3>
+            <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80 px-10">There is a big training ground where players are trained.</p>
+        </div>
+        </div>
+      </section>
+      <section class="text-center mb-12">
+        <h3 class="text-blacks font-extrabold text-4xl px-10">Program Sections</h3>
+        <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80">There are many more hockey clubs. All clubs are reputed and well populated by players. They provide many beneficial service.</p>
+        <div class="flex flex-col justify-center gap-10 ">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 w-3/4 text-center px-auto mx-auto">
+          <div  class="card h-80 bg-base-100 shadow-xl image-full w-3/4 opacity-100 bg-no-repeat" >
+            <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+            <div class="card-body  flex flex-col justify-center mt-24">
+              <h2 class="card-title text-start font-extrabold text-3xl">Junior Program</h2>
+              <p class="text-start">This is such a program where many things are learnt by the players. And they can learn many things here too much easily.</p>
+              <div class="card-actions justify-start">
+                <button class=" btn  bg-secondary border-none inline-flex justify-center px-5  text-white text-center">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div  class="card h-80 bg-base-100 shadow-xl image-full w-3/4 opacity-100 bg-no-repeat" >
+            <figure class="w-full"><img src="./Images/3.png" alt="Shoes"  /></figure>
+            <div class="card-body  flex flex-col justify-center mt-24">
+              <h2 class="card-title text-start font-extrabold text-3xl">Teenager Program</h2>
+              <p class="text-start">This is such a program where many things are learnt by the players. And they can learn many things here too much easily.</p>
+              <div class="card-actions justify-start">
+                <button class=" btn  bg-secondary border-none inline-flex justify-center px-5  text-white text-center">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-5 ">
+        <div class="card h-96 bg-base-100 shadow-xl image-full w-3/4 opacity-100 bg-no-repeat" style="background-image: url('./Images/4.png')">
+          <!-- <figure><img src="./Images/4.png" alt="Shoes" /></figure> -->
+          <div class="card-body flex flex-col justify-center mt-24">
+            <h2 class="card-title text-start font-extrabold text-3xl text-white">Professional Program</h2>
+            <p class="text-start text-white">This is such a program where many things are learnt by the players. And they can learn many things here too much easily.</p>
+            <div class="card-actions justify-start mb-5">
+              <button class="btn  bg-secondary border-none inline-flex justify-center px-5  text-white text-center">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="text-center mb-12">
+        <h3 class="text-blacks font-extrabold text-4xl px-10">Our New Products</h3>
+        <p class="text-base font-normal mt-5 mb-8 text-blacks opacity-80">There are many more hockey related products. All clubs are reputed and well populated by players. They provide many beneficial service.</p>
+       <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 mx-auto">
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto">
+          <figure><img src="./Images/5.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-2 text-start">Price - $22.00</h3>
+              <div class="flex flex-row gap-1 mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt=""  width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee: Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto">
+          <figure><img src="./Images/6.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-5 text-start">Price - $22.00</h3>
+              <div class="flex flex-row mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt=""  width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto">
+          <figure><img src="./Images/7.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-5 text-start">Price - $22.00</h3>
+              <div class="flex flex-row mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt=""  width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto">
+          <figure><img src="./Images/8.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-5 text-start">Price - $22.00</h3>
+              <div class="flex flex-row mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt=""  width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto">
+          <figure><img src="./Images/9.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-5 text-start">Price - $22.00</h3>
+              <div class="flex flex-row mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt=""  width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl space-y-6 w-3/4 mx-auto ">
+          <figure><img src="./Images/10.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex flex-row gap-2">
+              <img src="./Images/Frame.png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">5.0</h4>
+              <img src="./Images/Frame (1).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">20</h4>
+              <img src="./Images/Frame (2).png" alt="">
+              <h4 class="text-base font-normal text-blacks opacity-80 ">200</h4>
+            </div>
+            <h2 class="card-title text-extrabold text-blacks text-xl">World Cup Flags Football</h2>
+            <p class="text-base font-normal text-blacks opacity-80 text-start ">This is a jersey. You can buy it in a low price.<br>It has got higher rating</p>
+            <div class=" flex flex-col lg:flex-row justify-start">
+              <h3 class="text-secondary font-extrabold text-lg mr-5 text-start">Price - $22.00</h3>
+              <div class="flex flex-row mt-2 lg:mt-0">
+              <img src="./Images/Frame (3).png" alt="" width="20px" height="20px" class="mr-2">
+              <p class="text-base font-normal text-blacks opacity-70 text-start ">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
     </main>
-    <footer>
-
+    <footer class="footer p-10 bg-blacks sm:text-center text-base-content place-items-center py-20 px-16 lg:space-x-5 ">
+      <aside class="space-y-4 ">
+        <h1 class="font-extrabold text-3xl text-white">Get In Touch</h1>
+        <p class="text-base font-normal text-white opacity-50 text-start">You can contact with us via the following links given below.<br> We can assure the best quality , it is guareented.</p>
+        <div class="flex flex-row gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
+          <path d="M20.75 3.75V14.25C20.75 14.8467 20.5129 15.419 20.091 15.841C19.669 16.2629 19.0967 16.5 18.5 16.5H3.5C2.90326 16.5 2.33097 16.2629 1.90901 15.841C1.48705 15.419 1.25 14.8467 1.25 14.25V3.75M20.75 3.75C20.75 3.15326 20.5129 2.58097 20.091 2.15901C19.669 1.73705 19.0967 1.5 18.5 1.5H3.5C2.90326 1.5 2.33097 1.73705 1.90901 2.15901C1.48705 2.58097 1.25 3.15326 1.25 3.75M20.75 3.75V3.993C20.75 4.37715 20.6517 4.75491 20.4644 5.0903C20.2771 5.42569 20.0071 5.70754 19.68 5.909L12.18 10.524C11.8252 10.7425 11.4167 10.8582 11 10.8582C10.5833 10.8582 10.1748 10.7425 9.82 10.524L2.32 5.91C1.99292 5.70854 1.72287 5.42669 1.53557 5.0913C1.34827 4.75591 1.24996 4.37815 1.25 3.994V3.75" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> <p class="text-base font-normal text-white opacity-50 ">hockeys@support.com</p></div>
+        <div class="flex flex-row gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z" stroke="#FF4240" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="text-base font-normal text-white opacity-50 ">(+62) 123-321-543</p>
+        </div>
+      </aside> 
+      <div class="grid grid-cols-2 gap-5  lg:grid-cols-3 lg:space-x-12">
+      <nav class="grid grid-cols-1 gap-4">
+        <h6 class=" text-white font-bold text-lg">Company</h6> 
+        <a class="link link-hover text-base font-normal text-white opacity-50">Branding</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Design</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Marketing</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Advertisement</a>
+      </nav> 
+      <nav class="grid grid-cols-1 gap-4">
+        <h6 class=" text-white font-bold text-lg">Support</h6> 
+        <a class="link link-hover  text-base font-normal text-white opacity-50">About us</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Contact</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Jobs</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Press kit</a>
+      </nav> 
+      <nav class="grid grid-cols-1 gap-4 mt-5 lg:mt-0">
+        <h6 class="text-white font-bold text-lg">Services</h6> 
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Terms of use</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Privacy policy</a>
+        <a class="link link-hover  text-base font-normal text-white opacity-50">Cookie policy</a>
+      </nav>
+      </div>
     </footer>
 </body>
 </html>
